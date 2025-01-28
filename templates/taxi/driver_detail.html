@@ -5,8 +5,7 @@
 <p>License Number: {{ object.license_number }}</p>
 <h2>Cars</h2>
 <ul>
-    {% for car in object.car_set.all %}
-    <li>{{ car.model }} (Manufacturer: {{ car.manufacturer.name }})</li>
-    {% endfor %}
+  {% for car in object.car_set.all %}<li>{{ car.model }} (Manufacturer: {{ car.manufacturer.name }})</li>
+  {% endfor %}
 </ul>
 {% endblock %}
